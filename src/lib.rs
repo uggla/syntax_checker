@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-pub fn check(input: String) -> bool {
+pub fn check(input: &str) -> bool {
     let mut stack: Vec<char> = Vec::new();
     for i in input.chars() {
         match i {

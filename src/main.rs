@@ -12,9 +12,9 @@ fn main() {
         .read_to_string(&mut content)
         .expect("Fail to read from file");
     let msg = String::from("Hello this is a test {};");
-    let mut chk = check(msg);
+    let mut chk = check(&msg);
     println!("{}", chk);
+    chk = check(&content);
     println!("{}", content);
-    chk = check(content);
     println!("{}", chk);
 }

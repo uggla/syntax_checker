@@ -11,7 +11,7 @@ pub fn check(input: String) -> bool {
                         return false;
                     }
                 }
-                None => break,
+                None => return false,
             },
             _ => (),
         }

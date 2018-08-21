@@ -12,4 +12,5 @@ fn check_input() {
     assert_eq!(check("[}]".to_string()), false);
     assert_eq!(check("([}])".to_string()), false);
     assert_eq!(check("(".to_string()), false);
+    assert_eq!(check("()}".to_string()), false);
 }

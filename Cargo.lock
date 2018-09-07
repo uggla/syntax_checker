@@ -1,0 +1,4 @@
+[[package]]
+name = "syntax_checker"
+version = "0.1.0"
+

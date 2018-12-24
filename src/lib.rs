@@ -29,11 +29,7 @@ fn compare(prev: char, current: char) -> bool {
     closer.insert('[', ']');
 
     match closer.get(&prev) {
-        Some(x) => if *x == current {
-            true
-        } else {
-            false
-        },
+        Some(x) => *x == current,
         None => false,
     }
 }

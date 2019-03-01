@@ -1,6 +1,12 @@
 use std::collections::HashMap;
 
 /// Check if input with open brackets or parenthesis are respectively closed
+///
+/// Examples :
+///
+/// ```
+/// assert_eq!(check("{[]}"), true);
+/// ```
 pub fn check(input: &str) -> bool {
     let mut stack: Vec<char> = Vec::new();
     for i in input.chars() {

@@ -28,7 +28,7 @@ pub fn check(input: &str) -> bool {
             '[' | '(' | '{' => stack.push(i),
             ']' | ')' | '}' => match stack.pop() {
                 Some(prev) => {
-                    if compare(prev, i) != true {
+                    if !compare(prev, i) {
                         return false;
                     }
                 }
